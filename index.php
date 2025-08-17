@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,17 @@
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-    <title>Museo de San Pedro</title>
+    <title>J.M. Apilado Resort</title>
 </head>
 <body>
     <?php include "./components/navbar.php"; ?>
-    <div class="flex flex-col h-[75vh] justify-center items-center text-secondary cursor-default">
-        <p class="font-satisfy md:text-2xl text-lg">Welcome to</p>
-        <h1 class="md:text-6xl text-4xl font-satisfy text-center text-pretty font-bold header-text">Museo de San Pedro</h1>
+    <div class="flex flex-col h-[75vh] justify-center items-center text-secondary cursor-default select-none">
+        <p class="text-lg tracking-widest uppercase pb-4">Welcome to</p>
+        <h1 class="md:text-6xl text-4xl font-satisfy text-center text-pretty font-bold header-text">J.M. Apilado Resort</h1>
         <div id="header-bg" class="absolute -z-50 bg-[url(/assets/bg.jpg)] filter brightness-50 bg-cover mask h-screen w-full"></div>
     </div>
 
-    <div class="flex md:flex-row flex-col justify-center flex-wrap bg-gradient-to-br bg-secondary gap-5">
+    <div class="flex md:flex-row flex-col justify-center flex-wrap bg-gradient-to-br bg-secondary gap-5 select-none">
         <!-- Showcase component -->
         <div id="showcase" class="grid grid-cols-2 pt-40 pb-20 md:px-48 px-10 gap-12 justify-center items-center">
             <div class="w-full md:col-span-1 col-span-2 text-primary md:text-end text-center leading-3">
@@ -52,71 +52,44 @@
         <div id="our-location" class="m-10 mt-20 flex flex-col gap-10 items-center">
             <div class="text-primary md:mx-40 mx-0 md:text-left text-center">
                 <h1 class="font-satisfy text-6xl font-bold mb-10">Where to find?</h1>
-                <p class="text-sm font-bold mb-5">Museo De San Pedro is located at #122 Magsasaysay, San Pedro City, Laguna.</p>
-                <p class="text-sm">It's only a 17-minute drive from HBC San Pedro. You can also take a jeepney ride on the "estrella trip" route, heading to Magsasay (beside HBC). Advise the driver to drop you off at "Museo De San Pedro" in front of Villa Consolascion. Alternatively, use the Waze Mobile App to locate us.</p>
+                <p class="text-sm font-bold mb-5">J.M. Apilado Resort is located at #122 Magsasaysay, San Pedro City, Laguna.</p>
+                <p class="text-sm">It's only a 17-minute drive from HBC San Pedro. You can also take a jeepney ride on the "estrella trip" route, heading to Magsasay (beside HBC). Advise the driver to drop you off at "Museo de San Pedro" in front of Villa Consolascion. Alternatively, use the Waze Mobile App to locate us.</p>
                 <div class="rounded-2xl overflow-hidden my-10 shadow-2xl shadow-black">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.3497232969933!2d121.03387312189574!3d14.338998936361174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d6e6c433d123%3A0x4be58cfd35018b40!2sMuseo%20de%20San%20Pedro!5e1!3m2!1sen!2sph!4v1714867684158!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             
             <div id="packages" class="w-full text-center mt-20 mb-0">
-                <h1 class="font-satisfy text-6xl font-bold text-primary">All In Packages</h1>
+                <h1 class="font-satisfy text-6xl font-bold text-primary">Events Packages</h1>
             </div>
             <div class="flex flex-row gap-3 flex-wrap justify-center cursor-default">
-                <!-- Package containers -->
-                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
-                    <!-- Package name, pax, and price -->
-                    <div class="flex flex-col gap-1">
-                        <p class="font-black text-4xl">PHP 50,000</p>
-                        <p class="font-extrabold text-xs">(50 pax)</p>
+                <!-- Package price cards -->
+                <div class="flex flex-wrap gap-6 justify-center">
+                    <div class="package-container w-72 bg-primary p-8 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow hover:scale-105">
+                        <p class="font-black text-4xl mb-2">PHP 50,000</p>
+                        <p class="font-extrabold text-sm mb-4">50 PAX</p>
+                        <p class="text-sm italic">Perfect for intimate gatherings</p>
                     </div>
-                    <!-- Food caterings, decorations, and venue -->
-                    <div class="flex flex-row flex-wrap gap-5 justify-between">
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Food Catering</h1>
-                            <ul class="text-sm">
-                                <li>4 Main Course</li>
-                                <li>Unli Rice</li>
-                                <li>Unli Iced Tea/Water</li>
-                                <li>Dessert</li>
-                                <li>Waiters</li>
-                            </ul>
-                        </div>
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Decorations</h1>
-                            <ul class="text-sm">
-                                <li>Theme of your choice set-up</li>
-                                <li>Celebrant's chair</li>
-                                <li>Flower/Balloon Arrangement</li>
-                                <li>Tables and chairs set-up</li>
-                                <li>Cake Table set-up</li>
-                                <li>Back Drop set-up</li>
-                            </ul>
-                        </div>
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Venue</h1>
-                            <ul class="text-sm">
-                                <li>Function Area</li>
-                                <li>Swimming Pool</li>
-                                <li>Basic Sound System</li>
-                                <li>3 Air-conditioned System</li>
-                                <li>Videoke Room</li>
-                                <li>1 Kubo</li>
-                            </ul>
-                        </div>
+
+                    <div class="package-container w-72 bg-primary p-8 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow hover:scale-105">
+                        <p class="font-black text-4xl mb-2">PHP 60,000</p>
+                        <p class="font-extrabold text-sm mb-4">75 PAX</p>
+                        <p class="text-sm italic">Ideal for medium-sized events</p>
+                    </div>
+
+                    <div class="package-container w-72 bg-primary p-8 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow hover:scale-105">
+                        <p class="font-black text-4xl mb-2">PHP 70,000</p>
+                        <p class="font-extrabold text-sm mb-4">100 PAX</p>
+                        <p class="text-sm italic">Best for large celebrations</p>
                     </div>
                 </div>
-                <!-- Package containers -->
-                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
-                    <!-- Package name, pax, and price -->
-                    <div class="flex flex-col gap-1">
-                        <p class="font-black text-4xl">PHP 60,000</p>
-                        <p class="font-extrabold text-xs">(75 pax)</p>
-                    </div>
-                    <!-- Food caterings, decorations, and venue -->
-                    <div class="flex flex-row flex-wrap gap-5 justify-between">
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Food Catering</h1>
+
+                <!-- Shared inclusions section -->
+                <div class="w-full text-center mb-8 mt-8">
+                    <h2 class="text-primary font-bold uppercase tracking-widest mb-4">All packages include</h2>
+                    <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto px-4">
+                        <div class="bg-primary rounded-lg p-6 text-primary shadow-lg shadow-black">
+                            <h3 class="font-satisfy text-2xl font-bold mb-3">Food Catering</h3>
                             <ul class="text-sm">
                                 <li>4 Main Course</li>
                                 <li>Unli Rice</li>
@@ -125,8 +98,8 @@
                                 <li>Waiters</li>
                             </ul>
                         </div>
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Decorations</h1>
+                        <div class="bg-primary rounded-lg p-6 text-primary shadow-lg shadow-black">
+                            <h3 class="font-satisfy text-2xl font-bold  mb-3">Decorations</h3>
                             <ul class="text-sm">
                                 <li>Theme of your choice set-up</li>
                                 <li>Celebrant's chair</li>
@@ -136,50 +109,8 @@
                                 <li>Back Drop set-up</li>
                             </ul>
                         </div>
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Venue</h1>
-                            <ul class="text-sm">
-                                <li>Function Area</li>
-                                <li>Swimming Pool</li>
-                                <li>Basic Sound System</li>
-                                <li>3 Air-conditioned System</li>
-                                <li>Videoke Room</li>
-                                <li>1 Kubo</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
-                    <!-- Package name, pax, and price -->
-                    <div class="flex flex-col gap-1">
-                        <p class="font-black text-4xl">PHP 70,000</p>
-                        <p class="font-extrabold text-xs">(100 pax)</p>
-                    </div>
-                    <!-- Food caterings, decorations, and venue -->
-                    <div class="flex flex-row flex-wrap gap-5 justify-between">
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Food Catering</h1>
-                            <ul class="text-sm">
-                                <li>4 Main Course</li>
-                                <li>Unli Rice</li>
-                                <li>Unli Iced Tea/Water</li>
-                                <li>Dessert</li>
-                                <li>Waiters</li>
-                            </ul>
-                        </div>
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Decorations</h1>
-                            <ul class="text-sm">
-                                <li>Theme of your choice set-up</li>
-                                <li>Celebrant's chair</li>
-                                <li>Flower/Balloon Arrangement</li>
-                                <li>Tables and chairs set-up</li>
-                                <li>Cake Table set-up</li>
-                                <li>Back Drop set-up</li>
-                            </ul>
-                        </div>
-                        <div class="flex flex-col gap-2 m-auto">
-                            <h1 class="font-satisfy text-2xl">Venue</h1>
+                        <div class="bg-primary rounded-lg p-6 text-primary shadow-lg shadow-black">
+                            <h3 class="font-satisfy text-2xl font-bold mb-3">Venue</h3>
                             <ul class="text-sm">
                                 <li>Function Area</li>
                                 <li>Swimming Pool</li>
@@ -196,70 +127,71 @@
             <div class="w-full text-center mt-20 mb-0">
                 <h1 class="font-satisfy text-5xl text-primary">or book with our other <b><u>Packages!</u></b></h1>
             </div>
-            <div class="flex flex-row gap-3 h-full flex-wrap justify-center cursor-default">
-                <div class="flip-card h-full md:w-96 w-full cursor-pointer" onclick="this.classList.toggle('flipped')">
-                    <div class="flip-card-inner">
-                        <!-- Front side -->
-                        <div class="flip-card-front package-container bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
-                            <div class="flex flex-col gap-1">
-                                <p class="font-satisfy text-3xl font-bold">Wedding Package</p>
-                                <p class="font-black text-4xl">PHP 50,000</p>
-                                <p class="font-extrabold text-xs">(50 pax)</p>
-                            </div>
-                        </div>
-                        <!-- Back side with extra details -->
-                        <div class="flip-card-back package-container bg-secondary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
-                            <h2 class="text-2xl font-bold">Wedding Package Details</h2>
-                            <p class="text-sm">Additional information about the wedding package, including services, decor, and timeline.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card md:w-96 w-full cursor-pointer" onclick="this.classList.toggle('flipped')">
-                    <div class="flip-card-inner">
-                        <!-- Front side -->
-                        <div class="flip-card-front package-container bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
-                            <div class="flex flex-col gap-1">
-                                <p class="font-satisfy text-3xl font-bold">Daytime Swimming</p>
-                                <p class="font-black text-4xl">PHP 7,000</p>
-                                <p class="font-extrabold text-xs">(25 pax)</p>
-                            </div>
-                        </div>
-                        <!-- Back side -->
-                        <div class="flip-card-back package-container bg-secondary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
-                            <h2 class="text-2xl font-bold">Daytime Swimming Info</h2>
-                            <p class="text-sm">Details about daytime swimming services, schedule, and amenities.</p>
-                        </div>
+
+
+            <h1 class="w-full text-center font-bold uppercase tracking-widest text-primary">Swimming</h1>
+            <div class="flex flex-row flex-wrap justify-center gap-3">                
+                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
+                    <div class="flex flex-col gap-1">
+                        <p class="font-satisfy text-3xl font-bold">Daytime Swimming</p>
+                        <p class="font-black text-4xl">PHP 7,000</p>
+                        <p class="font-extrabold text-xs">(25 pax)</p>
+                        <p class="font-extrabold text-xs">8 AM - 6 PM</p>
                     </div>
                 </div>
 
                 
 
 
-                <!-- <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
+                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
                     <div class="flex flex-col gap-1">
                         <p class="font-satisfy text-3xl font-bold">Overnight Swimming</p>
                         <p class="font-black text-4xl">PHP 8,500</p>
                         <p class="font-extrabold text-xs">(20 pax)</p>
+                        <p class="font-extrabold text-xs">8 AM - 6 PM</p>
                     </div>
                 </div>
                 <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
                     <div class="flex flex-col gap-1">
-                        <p class="font-satisfy text-3xl font-bold">Swimming</p>
+                        <p class="font-satisfy text-3xl font-bold">Swimming (22 hrs)</p>
                         <p class="font-black text-4xl">PHP 14,500</p>
-                        <p class="font-extrabold text-xs">(22 hrs)</p>
+                        <p class="font-extrabold text-xs">(20 pax)</p>
+                        <p class="font-extrabold text-xs">8 AM - 6 PM or 8 PM to 6 PM</p>
                     </div>
                 </div>
-                
-                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
-                    <div class="flex flex-col gap-1">
-                        <p class="font-satisfy text-3xl font-bold">Events Venue (Function and Pool Area)</p>
-                        <p class="font-black text-4xl">PHP 20,000</p>
-                        <p class="font-extrabold text-xs">(8 hrs - 50/75/100 pax)</p>
-                    </div>
-                </div> -->
             </div>
 
-            <div class="text-primary flex flex-col gap-0 w-full mt-10">
+            <h1 class="w-full text-center font-bold uppercase tracking-widest text-primary">Function and Pool Area</h1>
+            <div class="flex flex-row gap-3 flex-wrap justify-center cursor-default">
+                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
+                    <div class="flex flex-col gap-1">
+                        <p class="font-satisfy text-3xl font-bold">Function and Pool Area</p>
+                        <p class="font-black text-4xl">PHP 20,000</p>
+                        <p class="font-extrabold text-xs">(50-100 pax)</p>
+                    </div>
+                </div>
+                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
+                    <div class="flex flex-col gap-1">
+                        <p class="font-satisfy text-3xl font-bold">Function Area Only</p>
+                        <p class="font-black text-4xl">PHP 10,000</p>
+                        <p class="font-extrabold text-xs">(50-100 pax)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="w-full text-center font-bold uppercase tracking-widest text-primary">Wedding</h1>
+            <div class="flex flex-row gap-3 flex-wrap justify-center cursor-default">
+                <div class="package-container md:w-96 w-full bg-primary p-10 flex flex-col gap-5 rounded-lg text-center text-primary shadow-lg shadow-black transition-shadow">
+                    <div class="flex flex-col gap-1">
+                        <p class="font-satisfy text-3xl font-bold">Wedding Package</p>
+                        <p class="font-black text-4xl">PHP 50,000</p>
+                        <p class="font-extrabold text-xs">(50 pax)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-10 items-center bg-tertiary w-full pb-20">
+            <div class="text-secondary flex flex-col gap-0 w-full mt-12">
                 <p class="text-center">Ready to stay in? <a class="hover:underline font-bold" href="./bookings.php">Book now</a> online!</p>
                 <p class="text-center">or you can contact us at <a class="hover:underline font-bold" href="mailto:info@museodesanpedro.com">info@museodesanpedro.com</a></p>
                 <p class="mt-5 text-center">Are you an admin? <a class="hover:underline font-bold" href="admin/login.php">Log in here</a></p>
@@ -310,7 +242,7 @@
 
         function onPackageItemHoverIn(target) {
             var tl = new TimelineMax({ paused: true });
-            tl.to(target, { scale: 1.05, duration: 0.1, ease: "easeIn" });
+            tl.to(target, { scale: 1.025, duration: 0.1, ease: "easeIn" });
 
             if (!tl.isActive()) {
                 tl.play(0);
